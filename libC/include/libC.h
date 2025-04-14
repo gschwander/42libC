@@ -6,7 +6,7 @@
 /*   By: gschwand <gschwand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 15:21:03 by gschwand          #+#    #+#             */
-/*   Updated: 2025/04/14 15:34:57 by gschwand         ###   ########.fr       */
+/*   Updated: 2025/04/14 16:06:15 by gschwand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,7 @@ typedef struct s_link_list
     t_list * (*pf_lstlast)(t_list *lst);
     int (*pf_lstsize)(t_list *lst);
 } t_link_list;
+
+void	init_link_list(t_link_list *list);
 
 #endif
