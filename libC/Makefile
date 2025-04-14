@@ -1,9 +1,8 @@
 NAME 		= 	libC.a
-SRC 		= 	SRC/
+SRC 		= 	SRC/link_list.c
 OBJS 		= 	$(SRC:.c=.o)
 CC 		= 	cc
 CFLAGS 		= 	-Wall -Wextra -Werror -Iinclude
-includes	= 	include/libC.h
 
 all:	$(NAME)
 
