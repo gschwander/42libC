@@ -14,7 +14,7 @@
 # define LIBC_H
 
 # include "../../libft/include/libft.h"
-# incldue "get_next_line.h"
+# include "get_next_line.h"
 
 typedef struct s_link_list
 {

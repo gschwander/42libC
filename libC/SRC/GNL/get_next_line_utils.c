@@ -1,7 +1,7 @@
 #include "get_next_line.h"
 
 
-int find_chr(char *str, char c)
+int find_chr_gnl(char *str, char c)
 {
     int i;
 
@@ -15,7 +15,7 @@ int find_chr(char *str, char c)
     return (-1);
 }
 
-void ft_bezero(char *str, int n)
+void ft_bezero_gnl(char *str, int n)
 {
     int i;
 
@@ -27,7 +27,7 @@ void ft_bezero(char *str, int n)
     }
 }
 
-int ft_strlen(char *str)
+int ft_strlen_gnl(char *str)
 {
     int i;
 
@@ -37,7 +37,7 @@ int ft_strlen(char *str)
     return (i);
 }
 
-void ft_strcpy(char *dest, char *src)
+void ft_strcpy_gnl(char *dest, char *src)
 {
     int i;
 
@@ -50,13 +50,14 @@ void ft_strcpy(char *dest, char *src)
     dest[i] = '\0';
 }
 
-char *ft_strdup(char *str)
+char *ft_strdup_gnl(char *str)
 {
     char *new_str;
 
-    new_str = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1));
+    new_str = (char *)malloc(sizeof(char) * (ft_strlen_gnl(str) + 1));
     if (new_str == NULL)
         return (NULL);
-    ft_strcpy(new_str, str);
+    ft_strcpy_gnl(new_str, str);
     return (new_str);
 }
+
