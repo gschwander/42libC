@@ -1,5 +1,7 @@
 NAME 		= 	libC.a
-SRC 		= 	SRC/link_list.c
+SRC 		= 	SRC/link_list.c \
+			SRC/GNL/get_next_line.c \
+			SRC/GNL/get_next_line_utils.c
 OBJS 		= 	$(SRC:.c=.o)
 CC 		= 	cc
 CFLAGS 		= 	-Wall -Wextra -Werror -Iinclude
